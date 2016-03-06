@@ -1,0 +1,5 @@
+<idea-plugin version="2">
+    <extensions defaultExtensionNs="com.intellij">
+        <annotator language="Python" implementationClass="de.sciencecomputing.venuside.PythonMethodAnnotator"/>
+    </extensions>
+</idea-plugin>

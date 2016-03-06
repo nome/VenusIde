@@ -1,0 +1,24 @@
+{
+parserClass="de.sciencecomputing.venuside.parser.ContextParser"
+
+extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+psiClassPrefix="Context"
+psiImplClassSuffix="Impl"
+psiPackage="de.sciencecomputing.venuside.psi"
+psiImplPackage="de.sciencecomputing.venuside.psi.impl"
+
+elementTypeHolderClass="de.sciencecomputing.venuside.psi.ContextTypes"
+elementTypeClass="de.sciencecomputing.venuside.psi.ContextElementType"
+tokenTypeClass="de.sciencecomputing.venuside.psi.ContextTokenType"
+
+psiImplUtilClass="de.sciencecomputing.venuside.psi.ContextPsiUtil"
+}
+
+contextFile ::= item_*
+
+private item_ ::= (assignment|COMMENT|CRLF)
+
+assignment ::= (VARIABLE? SEPARATOR VALUE?) | VARIABLE {methods=[getVariable getValue]}
+
+//{ mixin="de.sciencecomputing.venuside.psi.impl.ContextNamedElementImpl" implements="de.sciencecomputing.venuside.psi.ContextNamedElement" methods=[getKey getValue getName setNam getNameIdentifier getPresentatione] }

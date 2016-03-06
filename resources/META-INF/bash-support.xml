@@ -1,0 +1,5 @@
+<idea-plugin version="2">
+    <extensions defaultExtensionNs="com.intellij">
+        <annotator language="Bash" implementationClass="de.sciencecomputing.venuside.BashMethodAnnotator"/>
+    </extensions>
+</idea-plugin>
