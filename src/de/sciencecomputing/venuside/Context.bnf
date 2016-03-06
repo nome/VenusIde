@@ -12,7 +12,7 @@ elementTypeHolderClass="de.sciencecomputing.venuside.psi.ContextTypes"
 elementTypeClass="de.sciencecomputing.venuside.psi.ContextElementType"
 tokenTypeClass="de.sciencecomputing.venuside.psi.ContextTokenType"
 
-psiImplUtilClass="de.sciencecomputing.venuside.psi.ContextPsiUtil"
+psiImplUtilClass="de.sciencecomputing.venuside.psi.ContextPsiUtilKt"
 }
 
 contextFile ::= item_*
